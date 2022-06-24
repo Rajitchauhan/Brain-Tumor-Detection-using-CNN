@@ -13,12 +13,7 @@ import keras
 
 print("shiva")
 
-'''
-images_directory = 'datasets/'
-no_tumor_images = os.listdir(images_directory + 'no/')
 
-print(no_tumor_images)
-'''
 
 from google.colab import drive
 
@@ -140,11 +135,7 @@ model.add(Activation('sigmoid')) # step - 5 : output layer
 # Training the CNN (Compiler the cnn)
 model.compile(loss='categorical_crossentropy' , optimizer = 'adam' ,  metrics=['accuracy'])
 
-#model.fit(x_train ,  y_train ,
- #         batch_size=16 , verbose=1 ,
-  #        epochs=10,
-   #       validation_data=(x_test  , y_test) ,
-    #      shuffle = False)
+
 
 # training the cnn on training dataset
 res = model.fit(np.array(x_train), np.array(y_train), verbose=1, epochs=20 ,
@@ -198,9 +189,5 @@ input_img = np.expand_dims(img , axis=0)
 predict_x=model.predict(input_img) 
 result=np.argmax(predict_x,axis=1)
 print(f'Now detect img is affected or not :: {result} ')
-
-if result==1:
-  print(f' Detect img is affected by tumor  :: {result} ')
-else:
-  print(f'Detect img is not affected by tumor :: {result} ')
+# 0 means MRI has no tumor
 
