@@ -23,6 +23,43 @@ Suhib Irsheidat, et al. proposed an approach to detect[7]They proposed a model b
 Pankaj Sapraet al. proposed an approach to detect[8],Modified image segmentation algorithms were used on MRI scan images to detect brain tumors in this study. A modified Probabilistic Neural Network (PNN) model based on learning vector quantization (LVQ) with image and data analysis and manipulation techniques is also proposed in this paper for performing automatic brain tumor classification using MRI-scans. The training performance, classification accuracies, and computing time are all used to evaluate the updated PNN classifier's performance.
 
 
+# Proposed Work
+In this research, we implemented Image Processing and Data Augmentation strategies on a small dataset of 808 brain MRI images. We trained them through a easy Convolution layers CNN model and as compared our scratched CNN model . The dataset consists of 667 images of malignant cancer and 343 of benign non-cancerous tumors. We break up our dataset into 3 separate segments for training, validation, and testing. The training information is for model learning, validation information is pattern information for version assessment and model parameters tuning. Test information is for the final evaluation of our model. Our proposed technique consists of diverse phases
+
+
+## A. Image processing
+First, we cropped the dark edges from the images and took simplest the brain component from MRI images with the aid of using the usage of Open source Computer Vision (CV) Canny Edge Detection technique[9]. Canny Edge Detection is a multi-segment algorithm used to perceive the edges of an object in an image. In Fig 3, The edges of the Real MRI brain have shown the usage of the canny edge detection technique after which simplest the brains part of the image has been cropped
+
+![image](https://user-images.githubusercontent.com/45984646/175514889-f1e30b08-f89d-4594-ac87-adfbf46ec916.png)
+
+## B. Data augmentation
+Data Augmentation is a method for artificially growing the amount and complexity of present facts. We recognize that training a deep neural community desires a big quantity of facts to fine-tune the parameters [9]. But our dataset may be very small, so we carried out the method of facts augmentation on our education dataset with the aid of using including changes to our photos with the aid of using making minor adjustments, which include flipping, rotation, and brightness. It will growth our training data length and our model will keep in mind every of those small adjustments as a wonderful image, and it's going to allow our version to research higher and carry out well on unseen data. 
+
+![image](https://user-images.githubusercontent.com/45984646/175515041-e0943fd7-c7de-43bd-b104-1c984c0109d9.png)
+
+## C. CNN Model (Convolutional Neural Network)
+CNN is a deep learning model for processing data with a grid pattern, such as images, that is inspired by the structure of animal visual cortex [13] and designed to learn spatial hierarchies of characteristics from low- to high-level patterns automatically and adaptively. Convolution, pooling, and fully connected layers are the three types of layers (or building blocks) that make up a CNN. The first two layers, convolution and pooling, extract features, while the third, a fully connected layer, transfers the retrieved features to final outputs like classification. Convolution, a specific sort of linear operation, is a major component of CNN, which is made up of a stack of mathematical operations. Pixel values are stored in a two-dimensional (2D) grid, i.e., an array of numbers and a small grid of parameters called kernel, an optimizable feature extractor, is applied at each image position, making CNNs[11] highly efficient for image processing because a feature can appear anywhere in the image. Extracted features can become hierarchically and progressively more complicated as one layer feeds its output to the next layer.
+
+![image](https://user-images.githubusercontent.com/45984646/175516525-d1852026-1e1e-4c16-bf8f-f5d27e599f3e.png)
+
+
+## Work Flow of Proposed method
+
+1. Load input data
+2. Resizing the images
+3. Max Pooling feature
+4. Adding Convolution layer
+5. Flattering
+6.	Processing of the vector in dense layer
+7.	Final dense layer applying Sigmoid as the Activation Function
+
+
+
+
+
+
+
+
 
 ## Model and Training
 #### The model consists of:
@@ -59,7 +96,8 @@ Hassan Ali Khan et al. [9]  | 98.51
 Proposed CNN Model   | 99.81
 
 
-
+# Refernces
+https://devpost.com/software/glioai-automatic-mri-brain-tumor-detection
 
 
 
