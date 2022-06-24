@@ -6,14 +6,21 @@
 According to the National Brain Tumor Society, around 700,000 people in the United States have a brain tumor, with the figure rising to 787,000 by 2020 [1]. A brain tumor is not usually more common than other malignancies such as breast cancer or lung cancer, but it is nevertheless the 10th leading cause of death worldwide. Brain cancer is expected to kill 18,020 persons in the next 12 months [2]. A brain tumor has a long-term and mental impact on the lives of those who are affected. A brain tumor develops as a result of tissue damage. An anomaly that develops in the brain or within the main backbone and disrupts normal brain function. There are two types of brain tumors: benign and malignant. Benign brain tumors are benign tumors that do not contain cancer cells and grow slowly. They do not spread and usually live in a single part of the mind, but malignant mental tumors contain cancer cells and develop quickly, spreading to other areas of the mind and backbone. A malignant tumor is both dangerous and life-threatening. The World Health Organization (WHO) has classified brain tumors into grade 1 and 2 low-grade tumors (also known as benign tumors) and grade 3 and 4 high-grade tumors (also known as malignant tumors) based on brain health behavior 
 
 # Objective : 
-### Our main objective is to detect a brain tumor from MRI (Magnetic Resonance Image) using CNN (Convolutional Neural Network) .
+#### Our main objective is to detect a brain tumor from MRI (Magnetic Resonance Image) using CNN (Convolutional Neural Network) .
 ###
-### We developed a model which is able to detect a brain tumor from MRI using CNN , we used a brain MRI data founded on kaggle.
-### - The Name of Datasets is 'Dataset Br35H'.
+#### We developed a model which is able to detect a brain tumor from MRI using CNN , we used a brain MRI data founded on kaggle.
+#### - The Name of Datasets is 'Dataset Br35H'.
 'Dataset Br35H' :   https://www.kaggle.com/ahmedhamada0/brain-tumor-detection
-### - The Datasets contain two folder , one is 'yes' and another is 'no'.
-### - The folder 'yes' contain MRI that is tumous and 'no' contain non-tumous.
-### - We also  used another folder named 'pred' folder , which is used for prediction our model.
+#### - The Datasets contain two folder , one is 'yes' and another is 'no'.
+#### - The folder 'yes' contain MRI that is tumous and 'no' contain non-tumous.
+#### - We also  used another folder named 'pred' folder , which is used for prediction our model.
+
+# Related Work
+Hossain et al. proposed an approach to detect[6].They proposed using the Fuzzy C-Means clustering algorithm, followed by standard classifiers and convolutional neural networks, to extract brain tumors from 2D magnetic resonance brain images (MRI). The experiment was conducted on a real-time dataset with tumors of various sizes, locations, forms, and.Intensities
+
+Suhib Irsheidat, et al. proposed an approach to detect[7]They proposed a model based on Artificial Convolutional Neural Networks that uses mathematical formulas and matrices operations to evaluate magnetic resonance pictures. This neural network predicts the likelihood of a tumor in the brain, and it was trained using magnetic resonance images with 155 healthy brains and 98 tumors. There are 253 magnetic resonance pictures in total in the dataset.
+
+Pankaj Sapraet al. proposed an approach to detect[8],Modified image segmentation algorithms were used on MRI scan images to detect brain tumors in this study. A modified Probabilistic Neural Network (PNN) model based on learning vector quantization (LVQ) with image and data analysis and manipulation techniques is also proposed in this paper for performing automatic brain tumor classification using MRI-scans. The training performance, classification accuracies, and computing time are all used to evaluate the updated PNN classifier's performance.
 
 
 
