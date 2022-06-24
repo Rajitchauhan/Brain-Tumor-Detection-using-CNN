@@ -10,3 +10,45 @@
 ### - The Datasets contain two folder , one is 'yes' and another is 'no'.
 ### - The folder 'yes' contain MRI that is tumous and 'no' contain non-tumous.
 ### - We also  used another folder named 'pred' folder , which is used for prediction our model.
+
+
+
+## Model and Training
+#### The model consists of:
+
+* CNN Layer
+* Max Pooling Layer
+* Dense Layer
+* Fully Connected Layer
+* Loss Function: Categorical Cross-Entropy
+* Optimization Algorithm: Adam
+
+Model is trained on 20 epochs.
+
+Model | Accuracy | Loss
+| :--- | ---: | :---:
+CNN Proposed method  | 99.50% | 0.5%
+
+### Model Accuracy :
+
+![image](https://user-images.githubusercontent.com/45984646/175507341-24c55b8a-2a1f-4f0d-9889-3ca944bab920.png)
+
+### Model Loss
+
+![image](https://user-images.githubusercontent.com/45984646/175507184-38bb552c-aed2-4917-a57c-214bd5c58dfd.png)
+
+
+### Compare our model with existing model . 
+
+Methodology  | Accuracy(%)
+------------- | -------------
+Hossain et al.[6]  | 97.87
+Suhib Irsheidat et al.[7]  | 96.7
+Hassan Ali Khan et al. [9]  | 98.51
+Proposed CNN Model   | 99.81
+
+
+
+
+
+
