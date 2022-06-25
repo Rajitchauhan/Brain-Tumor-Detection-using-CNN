@@ -98,8 +98,15 @@ Suhib Irsheidat et al.[7]  | 96.7
 Hassan Ali Khan et al. [9]  | 98.51
 Proposed CNN Model   | 99.81
 
+# Future Scope
+Improve computational time by using boosting techniques using data augmentation  , fine-tuning hyper parameter i.e. using adding more appropriate layers.
+Classifier boosting is done by building model from the training data then creating a second model that attempt to correct the error from first model for faster prognosis. Such technique can be used to raise the accuracy even higher and reach a level that will allow to be asset to any medical facility dealing with brain tumor. 
+
+
 # Conclusion 
 A new strategy to classifying brain tumors was presented in this research. We first found the region of interest in MRI pictures and cropped them using the image edge detection approach. Increasing the size of our training data using data augmentation. Second, we offer a cost-effective solution .A basic CNN network is proposed as an approach for brain tumor classification. For elegant and sophisticated precise outcomes The training of a neural network demands a vast quantity of data, but our results were promising.We created an CNN to identify MRI scans as positive (labeled as 1) or negative (labeled as 0), indicating whether or not the individual has a tumor. We tested our CNN with a test data set and observed that it has an evaluation accuracy of 90.25%. We finally developed an Artificial Convolution Neural Network that can predict brain tumors from MRI brain images, with forecasting accuracy of up to 88.25 % on test data and 99.81 % on assessment data. We plan to further refine the CNN, tune it with the best tunes and settings, and train it with more data, either from other sources or by adding more augmentation to existing images.
+
+
 
 # References
 [1].NBTS, National Brain Tumor Society: Quick brain tumor facts, 2020. Available from:
